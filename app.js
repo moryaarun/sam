@@ -1,332 +1,732 @@
-// Om Jyotirlinga Tours - app.js (FIXED VERSION)
-// Data (embedded)
-const data = {
-  jyotirlingas: [
-    {
-      name: "Somnath",
-      location: "Prabhas Patan",
-      state: "Gujarat",
-      highlights: "First among 12, on Arabian Sea coast, rebuilt multiple times",
-      bestTime: "October-March",
-      speciality: "Ocean view, evening aarti, historical significance",
-      nearbyAttractions: "Dwarkadhish Temple, Gir Forest",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1749358936/pplx_project_search_images/2d0445370070f38091cad845fd55d913a314df30.jpg",
-    },
-    {
-      name: "Mallikarjuna",
-      location: "Srisailam",
-      state: "Andhra Pradesh",
-      highlights: "Both Jyotirlinga and Shaktipeeth, Nallamala Hills",
-      bestTime: "November-March",
-      speciality: "Forest setting, ropeway service, Krishna River",
-      nearbyAttractions: "Srisailam Dam, Wildlife Sanctuary",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1753193739/pplx_project_search_images/00c42648555d3bc7bdb840a30765c1f822220346.jpg",
-    },
-    {
-      name: "Mahakaleshwar",
-      location: "Ujjain",
-      state: "Madhya Pradesh",
-      highlights: "Only south-facing lingam, famous Bhasma Aarti",
-      bestTime: "October-March",
-      speciality: "Unique south-facing direction, ancient city of Ujjain",
-      nearbyAttractions: "Kal Bhairav Temple, Sandipani Ashram",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1753021544/pplx_project_search_images/ea2088e27b7a81838bfb372d8200bf72460b1f0d.jpg",
-    },
-    {
-      name: "Omkareshwar",
-      location: "Khandwa",
-      state: "Madhya Pradesh",
-      highlights: "Om-shaped island on Narmada river, two temples",
-      bestTime: "October-April",
-      speciality: "Sacred island, boat rides, confluence of rivers",
-      nearbyAttractions: "Maheshwar, Narmada River ghats",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1752921427/pplx_project_search_images/89c48ce9de41b68fcc761288d9ce4e47fa0f6b58.jpg",
-    },
-    {
-      name: "Kedarnath",
-      location: "Kedarnath",
-      state: "Uttarakhand",
-      highlights: "Highest Jyotirlinga at 3,583m, Himalayan setting",
-      bestTime: "April-November",
-      speciality: "17km trek from Gaurikund, snow-covered peaks",
-      nearbyAttractions: "Badrinath, Tungnath, Chopta",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1748758125/pplx_project_search_images/8442441025aa0b299d46488d552e51fc0cdd7843.jpg",
-    },
-    {
-      name: "Bhimashankar",
-      location: "Pune",
-      state: "Maharashtra",
-      highlights: "Dense forests, wildlife sanctuary, Sahyadri mountains",
-      bestTime: "October-March",
-      speciality: "Protected forest area, trekking trails",
-      nearbyAttractions: "Bhimashankar Wildlife Sanctuary, Shivneri Fort",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1751354671/pplx_project_search_images/44b25269b777ef9df688e5eb004c47253ff3dece.jpg",
-    },
-    {
-      name: "Kashi Vishwanath",
-      location: "Varanasi",
-      state: "Uttar Pradesh",
-      highlights: "Golden temple on Ganga, most famous Jyotirlinga",
-      bestTime: "October-March",
-      speciality: "Ancient city, Ganga aarti, spiritual atmosphere",
-      nearbyAttractions: "Sarnath, Ganga Ghats, BHU",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1753193764/pplx_project_search_images/f1d7651c07de091ec4fc1bc67fcabcaa09d586f0.jpg",
-    },
-    {
-      name: "Trimbakeshwar",
-      location: "Nashik",
-      state: "Maharashtra",
-      highlights: "Source of Godavari River, unique three-faced lingam",
-      bestTime: "October-March",
-      speciality: "Origin of sacred Godavari, Brahmagiri Hills",
-      nearbyAttractions: "Sula Vineyards, Panchavati, Kalaram Temple",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1751354670/pplx_project_search_images/13c70bb53c2b55adb3ef9d1fe878210f5f54dae1.jpg",
-    },
-    {
-      name: "Vaidyanath",
-      location: "Deoghar",
-      state: "Jharkhand",
-      highlights: "Major Shravani Mela festival, healing powers",
-      bestTime: "October-March",
-      speciality: "Medical healing significance, Shravan month pilgrimage",
-      nearbyAttractions: "Trikut Hills, Nandan Pahar, Tapovan",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1753021544/pplx_project_search_images/ea2088e27b7a81838bfb372d8200bf72460b1f0d.jpg",
-    },
-    {
-      name: "Nageshwar",
-      location: "Dwarka",
-      state: "Gujarat",
-      highlights: "Near legendary Dwarka city, coastal location",
-      bestTime: "October-March",
-      speciality: "Krishna connection, coastal temple",
-      nearbyAttractions: "Dwarkadhish Temple, Rukmini Temple, Bet Dwarka",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1749358936/pplx_project_search_images/2d0445370070f38091cad845fd55d913a314df30.jpg",
-    },
-    {
-      name: "Rameshwar",
-      location: "Rameswaram",
-      state: "Tamil Nadu",
-      highlights: "Magnificent corridors, Ramayana connection, island location",
-      bestTime: "October-April",
-      speciality: "22 sacred wells, longest temple corridor in world",
-      nearbyAttractions: "Pamban Bridge, Dhanushkodi, Adam's Bridge",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1748758125/pplx_project_search_images/8442441025aa0b299d46488d552e51fc0cdd7843.jpg",
-    },
-    {
-      name: "Grishneshwar",
-      location: "Aurangabad",
-      state: "Maharashtra",
-      highlights: "Last Jyotirlinga, close to Ellora caves",
-      bestTime: "October-March",
-      speciality: "UNESCO World Heritage site nearby, smallest temple",
-      nearbyAttractions: "Ellora Caves, Ajanta Caves, Daulatabad Fort",
-      image: "https://pplx-res.cloudinary.com/image/upload/v1753193739/pplx_project_search_images/00c42648555d3bc7bdb840a30765c1f822220346.jpg",
-    },
-  ],
+// Jyotirlinga Darshan Tours - JavaScript Functionality (Fixed Version)
+
+// Application Data
+const jyotirlingaData = [
+  {
+    "name": "Somnath",
+    "state": "Gujarat", 
+    "bestMonth": "October to March",
+    "description": "Home to the first and most ancient Jyotirlinga, Somnath is a spiritual powerhouse located along the Arabian Sea. The temple's grandeur and its dramatic seaside backdrop make it a must-visit. Steeped in mythology and history, Somnath has stood the test of time, being rebuilt several times after invasions — a symbol of faith and resilience.",
+    "package": "Gujarat Divine & Wildlife Trail: Somnath – Dwarka – Nageshwar – Gir (4 Days / 3 Nights)",
+    "highlights": "Nageshwar Jyotirlinga Temple, Rudra Yagna participation, and spiritual darshan near the Arabian coastline.",
+    "itinerary": "Day 1: Arrival in Somnath, evening temple darshan and aarti ceremony\nDay 2: Morning puja at Somnath, visit to Bhalka Tirth and Triveni Sangam\nDay 3: Travel to Dwarka, Krishna Janmabhoomi temple visit\nDay 4: Nageshwar Jyotirlinga darshan, departure",
+    "image": "jyotirlinga-darshan\images\Somnath.jpg"
+  },
+  {
+    "name": "Mallikarjuna", 
+    "state": "Andhra Pradesh",
+    "bestMonth": "October to March",
+    "description": "Srisailam is home to the Mallikarjuna Jyotirlinga, one of the 12 sacred Jyotirlingas of Lord Shiva, and also one of the 18 Maha Shakti Peethas — making it a rare dual pilgrimage site. Nestled in the lush Nallamala Hills by the Krishna River, the temple complex offers both spiritual energy and natural beauty.",
+    "package": "Srisailam Spiritual Retreat (2 Days / 1 Night)",
+    "highlights": "Temple darshan, Bhramaramba Shakti Peeth, Krishna River views, Nallamala Hills",
+    "itinerary": "Day 1: Arrival at Srisailam, temple darshan and evening aarti\nDay 2: Early morning puja, visit to Bhramaramba temple, scenic viewpoints, departure",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Mahakaleshwar",
+    "state": "Madhya Pradesh", 
+    "bestMonth": "October to March",
+    "description": "Located in the ancient city of Ujjain, Mahakaleshwar is one of the 12 Jyotirlingas and the only one that is south-facing (Dakshinamukhi) — a unique aspect that adds to its mystical aura. The temple is known for the sacred Bhasma Aarti, performed at dawn using sacred ash — a ritual that attracts thousands of devotees daily.",
+    "package": "Ujjain Sacred Circuit (3 Days / 2 Nights)",
+    "highlights": "Dawn Bhasma Aarti, Shipra River ghats, Kaal Bhairav temple",
+    "itinerary": "Day 1: Arrival in Ujjain, evening temple visit and local sightseeing\nDay 2: Early morning Bhasma Aarti (4 AM), Shipra River ghats, Kaal Bhairav temple\nDay 3: Ram Ghat, Sandipani Ashram, Ved Shala observatory, departure",
+    "image": "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Omkareshwar",
+    "state": "Madhya Pradesh",
+    "bestMonth": "October to February", 
+    "description": "Located on a sacred island in the Narmada River, Omkareshwar is known for its unique Om-shaped formation and divine energy. The temple complex offers breathtaking views and spiritual serenity.",
+    "package": "Narmada Divine Journey (2 Days / 1 Night)",
+    "highlights": "Island temple, Narmada Parikrama, river aarti",
+    "itinerary": "Day 1: Arrival at Omkareshwar, boat ride to temple island, evening aarti\nDay 2: Narmada Parikrama, Mamleshwar temple visit, departure",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Kedarnath",
+    "state": "Uttarakhand",
+    "bestMonth": "May-June, September-October",
+    "description": "Nestled high in the Himalayas, Kedarnath is accessible only during summer and autumn months. This sacred shrine by the Mandakini River offers an unparalleled spiritual experience amidst snow-capped peaks.",
+    "package": "Himalayan Spiritual Trek (3 Days / 2 Nights)", 
+    "highlights": "Temple trek, Bhairavnath temple, Himalayan views",
+    "itinerary": "Day 1: Reach Gaurikund, begin 16km trek to Kedarnath\nDay 2: Early morning darshan, visit Bhairavnath temple, rest day\nDay 3: Final darshan, trek back to Gaurikund, departure",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Bhimashankar",
+    "state": "Maharashtra",
+    "bestMonth": "October to March",
+    "description": "Located in the Sahyadri hills near Pune, Bhimashankar combines spiritual significance with natural beauty, being situated within a wildlife sanctuary.",
+    "package": "Sahyadri Spiritual Retreat (2 Days / 1 Night)",
+    "highlights": "Temple darshan, wildlife sanctuary, scenic trekking",
+    "itinerary": "Day 1: Drive from Pune to Bhimashankar, temple darshan, nature walk\nDay 2: Early morning puja, wildlife sanctuary visit, return to Pune",
+    "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Kashi Vishwanath", 
+    "state": "Uttar Pradesh",
+    "bestMonth": "November to February",
+    "description": "In the heart of Varanasi on the banks of the sacred Ganga, Kashi Vishwanath is considered the spiritual capital of India and the ultimate destination for moksha (liberation).",
+    "package": "Spiritual Wonders of Uttar Pradesh: Prayagraj – Kashi – Ayodhya (5 Days/4 Nights)",
+    "highlights": "Ganga Aarti at Dashashwamedh Ghat, temple darshan, spiritual city tour",
+    "itinerary": "Day 1: Arrival in Varanasi, Kashi Corridor visit, evening Ganga aarti\nDay 2: Early morning boat ride, temple darshan, city exploration\nDay 3: Travel to Prayagraj, Triveni Sangam, Akshayavat\nDay 4: Journey to Ayodhya, Ram Janmabhoomi, Hanuman Garhi\nDay 5: Final temple visits, departure",
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Trimbakeshwar",
+    "state": "Maharashtra", 
+    "bestMonth": "October to March",
+    "description": "Located at the origin of the sacred Godavari River, Trimbakeshwar features a unique three-faced Shiva linga and is surrounded by the beautiful Brahmagiri hills.",
+    "package": "Godavari Source Pilgrimage (2 Days / 1 Night)",
+    "highlights": "Trimbakeshwar Jyotirlinga, Kushavarta Kund, Brahmagiri Hill, Anjaneri (Hanuman's birthplace)",
+    "itinerary": "Day 1: Arrival in Nashik, Trimbakeshwar temple darshan, Kushavarta Kund\nDay 2: Brahmagiri hill trek, Anjaneri visit, departure",
+    "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Vaidyanath",
+    "state": "Jharkhand",
+    "bestMonth": "October to March",
+    "description": "Located in Deoghar, Vaidyanath is believed to have healing powers and is especially crowded during the Sawan festival when millions of devotees visit.",
+    "package": "Deoghar Healing Pilgrimage (2 Days / 1 Night)",
+    "highlights": "Temple darshan, Baidyanath dham, healing prayers",
+    "itinerary": "Day 1: Arrival in Deoghar, temple darshan, local temples visit\nDay 2: Early morning puja, Naulakha Mandir, departure",
+    "image": "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Nageshwar",
+    "state": "Gujarat",
+    "bestMonth": "October to March", 
+    "description": "Near Dwarka, Nageshwar is famous for its giant Shiva statue and proximity to the Arabian Sea, offering both spiritual and scenic experiences.",
+    "package": "Dwarka-Nageshwar Divine Tour (3 Days / 2 Nights)",
+    "highlights": "Temple darshan, giant Shiva statue, Dwarka city tour",
+    "itinerary": "Day 1: Arrival in Dwarka, Dwarkadhish temple, local sightseeing\nDay 2: Nageshwar Jyotirlinga darshan, giant Shiva statue, Bet Dwarka\nDay 3: Rukmini temple, Gomti Ghat, departure",
+    "image": "https://images.unsplash.com/photo-1558051815-0c90ac7a9d08?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Rameshwar",
+    "state": "Tamil Nadu",
+    "bestMonth": "October to April",
+    "description": "Located on Pamban Island and connected to the Ramayana, Rameshwar is famous for its magnificent corridors and the ritual of Agni Theertham.",
+    "package": "Rameshwar Island Pilgrimage (3 Days / 2 Nights)",
+    "highlights": "Temple corridors, Agni Theertham, Pamban Bridge, island tour",
+    "itinerary": "Day 1: Arrival in Rameshwaram, temple darshan, corridor exploration\nDay 2: 22 holy water tanks visit, Agni Theertham bath, Pamban Bridge\nDay 3: Dhanushkodi visit, Adam's Bridge view, departure",
+    "image": "https://images.unsplash.com/photo-1555993539-1b1ae2a5bb72?w=500&h=300&fit=crop"
+  },
+  {
+    "name": "Grishneshwar", 
+    "state": "Maharashtra",
+    "bestMonth": "October to March",
+    "description": "The last Jyotirlinga, located near the famous Ellora Caves, Grishneshwar combines spiritual significance with incredible architectural heritage.",
+    "package": "Ellora Heritage & Spiritual Tour (2 Days / 1 Night)", 
+    "highlights": "Grishneshwar Temple, Ellora Caves, Kailasa Temple, Daulatabad Fort",
+    "itinerary": "Day 1: Arrival in Aurangabad, Grishneshwar temple darshan, local exploration\nDay 2: Ellora Caves tour, Kailasa Temple, Daulatabad Fort, departure",
+    "image": "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=500&h=300&fit=crop"
+  }
+];
+
+const reviewsData = [
+  {
+    "name": "Rajesh Sharma",
+    "rating": 5,
+    "text": "Wonderful spiritual journey to all 12 Jyotirlingas. The team arranged everything perfectly - accommodation, transportation, and guides. Highly recommended for anyone seeking divine blessings.",
+    "location": "Mumbai"
+  },
+  {
+    "name": "Priya Patel", 
+    "rating": 5,
+    "text": "Our family's pilgrimage to Kedarnath and Kashi was beautifully organized. The spiritual experience was beyond words. Thank you for making our dream journey possible!",
+    "location": "Ahmedabad"
+  },
+  {
+    "name": "Suresh Kumar",
+    "rating": 4,
+    "text": "Excellent service and knowledgeable guides. The Gujarat Jyotirlinga tour was well-planned with comfortable stays. Will definitely book again for other pilgrimage tours.",
+    "location": "Pune"
+  },
+  {
+    "name": "Lakshmi Devi",
+    "rating": 5, 
+    "text": "The Char Dham yatra was a life-changing experience. Professional service, punctual transportation, and spiritual guidance throughout the journey. Blessed to have chosen this agency.",
+    "location": "Bangalore"
+  }
+];
+
+// Chatbot state management
+let chatbotState = {
+  step: 0,
+  userData: {
+    email: '',
+    phone: '',
+    interest: ''
+  }
 };
 
-// Wait for DOM to be ready
+const chatbotMessages = [
+  "🙏 Welcome to Jyotirlinga Darshan Tours! How can we help you today?",
+  "Thank you! Please provide your email address so we can send you detailed information:",
+  "Perfect! Now please share your phone number for better assistance:",
+  "Which Jyotirlinga yatra are you interested in? (You can mention specific temples or tour packages):",
+  "Thank you for sharing your details! 🙏 Our team will connect with you shortly to plan your spiritual journey. Om Namah Shivaya!"
+];
+
+// DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
-
-  // ------------------ NAVIGATION ------------------
-  const navToggle = document.getElementById("nav-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
-  if (navToggle) {
-    navToggle.addEventListener("click", function() {
-      navMenu.classList.toggle("show");
-      navToggle.classList.toggle("active");
-    });
-  }
-
-  // Close mobile menu when clicking nav links
-  const navLinks = document.querySelectorAll(".nav__link");
-  navLinks.forEach(link => {
-    link.addEventListener("click", function() {
-      if (navMenu && navMenu.classList.contains("show")) {
-        navMenu.classList.remove("show");
-        if (navToggle) navToggle.classList.remove("active");
-      }
-    });
-  });
-
-  // ------------------ SMOOTH SCROLLING ------------------
-  function smoothScrollTo(target) {
-    const element = document.querySelector(target);
-    if (element) {
-      const headerHeight = 80;
-      const elementPosition = element.offsetTop;
-      const offsetPosition = elementPosition - headerHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
-  }
-
-  // Handle all anchor links
-  document.addEventListener('click', function(e) {
-    const link = e.target.closest('a[href^="#"]');
-    if (link) {
-      const href = link.getAttribute('href');
-      if (href && href.length > 1) {
-        e.preventDefault();
-        smoothScrollTo(href);
-      }
-    }
-  });
-
-  // ------------------ RENDER JYOTIRLINGA GRID ------------------
-  const grid = document.getElementById("jyotirlinga-grid");
+  console.log('Initializing Jyotirlinga Darshan Tours website...');
   
-  if (grid) {
-    data.jyotirlingas.forEach((temple, index) => {
-      const card = document.createElement("div");
-      card.className = "jyotirlinga-card";
-      card.setAttribute("data-temple-index", index);
-      
-      card.innerHTML = `
-        <div class="jyotirlinga-header">
-          <div>
-            <div class="jyotirlinga-name">${temple.name}</div>
-            <div class="jyotirlinga-state">${temple.state}</div>
-          </div>
-          <div class="jyotirlinga-location">${temple.location}</div>
-        </div>
-        <div class="jyotirlinga-highlights">${temple.highlights}</div>
-        <div class="jyotirlinga-meta">
-          <span class="best-time">Best: ${temple.bestTime}</span>
-          <span class="learn-more">Click for details →</span>
-        </div>
-      `;
-      
-      grid.appendChild(card);
+  initializeApp();
+});
+
+// Initialize all app functionality
+function initializeApp() {
+  renderJyotirlingaCards();
+  renderReviews();
+  setupMobileNavigation();
+  setupSmoothScrolling();
+  setupModal();
+  setupInquiryForm();
+  setupChatbot();
+}
+
+// Render Jyotirlinga Cards
+function renderJyotirlingaCards() {
+  const grid = document.getElementById('jyotirlinga-grid');
+  if (!grid) {
+    console.error('Jyotirlinga grid container not found');
+    return;
+  }
+
+  grid.innerHTML = '';
+
+  jyotirlingaData.forEach((jyotirlinga, index) => {
+    const card = createJyotirlingaCard(jyotirlinga, index);
+    grid.appendChild(card);
+  });
+
+  console.log(`Rendered ${jyotirlingaData.length} Jyotirlinga cards`);
+}
+
+// Create individual Jyotirlinga card - FIXED to pass correct data
+function createJyotirlingaCard(jyotirlinga, index) {
+  const card = document.createElement('div');
+  card.className = 'jyotirlinga-card';
+  card.tabIndex = 0;
+  card.setAttribute('role', 'button');
+  card.setAttribute('aria-label', `View details for ${jyotirlinga.name} Jyotirlinga`);
+  
+  // Store jyotirlinga data as a data attribute to ensure correct data is passed
+  card.dataset.jyotirlingaIndex = index;
+
+  card.innerHTML = `
+    <img src="${jyotirlinga.image}" alt="${jyotirlinga.name} Temple" class="card-image" loading="lazy">
+    <div class="card-content">
+      <h3 class="card-title">${jyotirlinga.name}</h3>
+      <p class="card-location"><strong>📍 ${jyotirlinga.state}</strong></p>
+      <div class="best-month-badge">🗓️ Best Time: ${jyotirlinga.bestMonth}</div>
+    </div>
+  `;
+
+  // Add click event listener - FIXED to use stored index
+  card.addEventListener('click', (e) => {
+    e.preventDefault();
+    const index = parseInt(card.dataset.jyotirlingaIndex);
+    const jyotirlingaData_item = jyotirlingaData[index];
+    openJyotirlingaModal(jyotirlingaData_item);
+  });
+  
+  // Add keyboard navigation - FIXED to use stored index
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const index = parseInt(card.dataset.jyotirlingaIndex);
+      const jyotirlingaData_item = jyotirlingaData[index];
+      openJyotirlingaModal(jyotirlingaData_item);
+    }
+  });
+
+  return card;
+}
+
+// Render Reviews Section
+function renderReviews() {
+  const reviewsGrid = document.getElementById('reviews-grid');
+  if (!reviewsGrid) {
+    console.error('Reviews grid container not found');
+    return;
+  }
+
+  reviewsGrid.innerHTML = '';
+
+  reviewsData.forEach(review => {
+    const reviewCard = createReviewCard(review);
+    reviewsGrid.appendChild(reviewCard);
+  });
+
+  console.log(`Rendered ${reviewsData.length} reviews`);
+}
+
+// Create individual review card
+function createReviewCard(review) {
+  const card = document.createElement('div');
+  card.className = 'review-card';
+
+  const stars = '⭐'.repeat(review.rating);
+
+  card.innerHTML = `
+    <div class="review-rating">${stars}</div>
+    <p class="review-text">"${review.text}"</p>
+    <div class="review-author">${review.name}</div>
+    <div class="review-location">${review.location}</div>
+  `;
+
+  return card;
+}
+
+// Setup Mobile Navigation - FIXED
+function setupMobileNavigation() {
+  const navToggle = document.getElementById('mobile-nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  if (!navToggle || !navMenu) {
+    console.error('Mobile navigation elements not found');
+    return;
+  }
+
+  navToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    navToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking on navigation links
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('active');
+      navMenu.classList.remove('active');
     });
-  }
+  });
 
-  // ------------------ MODAL FUNCTIONALITY ------------------
-  const modal = document.getElementById("jyotirlinga-modal");
-  const modalClose = document.getElementById("modal-close");
-  const modalBody = document.getElementById("modal-body");
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+      navToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+}
 
-  function buildModalContent(temple) {
-    return `
-      <img src="${temple.image}" alt="${temple.name}" class="modal-temple-image" />
-      <div class="modal-content-body">
-        <h3 class="modal-temple-name">${temple.name}</h3>
-        <p class="modal-temple-location">${temple.location}, ${temple.state}</p>
-        <div class="modal-temple-details">
-          <div class="modal-detail-section">
-            <h4>Speciality</h4>
-            <p>${temple.speciality}</p>
-          </div>
-          <div class="modal-detail-section">
-            <h4>Highlights</h4>
-            <p>${temple.highlights}</p>
-          </div>
-          <div class="modal-detail-section">
-            <h4>Best Time to Visit</h4>
-            <p>${temple.bestTime}</p>
-          </div>
-          <div class="modal-detail-section">
-            <h4>Nearby Attractions</h4>
-            <p>${temple.nearbyAttractions}</p>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // Modal click handler - only for jyotirlinga cards
-  if (grid && modal && modalBody) {
-    grid.addEventListener("click", function(e) {
-      const card = e.target.closest(".jyotirlinga-card");
-      if (card) {
-        const index = parseInt(card.getAttribute("data-temple-index"), 10);
-        const temple = data.jyotirlingas[index];
+// Setup Smooth Scrolling - FIXED to work properly
+function setupSmoothScrolling() {
+  // Handle all navigation links including mobile
+  document.addEventListener('click', function(e) {
+    // Check if the clicked element is a navigation link
+    if (e.target.matches('a[href^="#"]')) {
+      e.preventDefault();
+      
+      const targetId = e.target.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        const headerHeight = 80;
+        const targetPosition = targetElement.offsetTop - headerHeight;
         
-        if (temple) {
-          modalBody.innerHTML = buildModalContent(temple);
-          modal.style.display = "block";
-          document.body.style.overflow = "hidden";
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        const navToggle = document.getElementById('mobile-nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+          navToggle.classList.remove('active');
+          navMenu.classList.remove('active');
         }
       }
-    });
-  }
-
-  // Close modal
-  function closeModal() {
-    if (modal) {
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
     }
+  });
+}
+
+// Setup Modal Functionality
+function setupModal() {
+  const modal = document.getElementById('jyotirlinga-modal');
+  const closeBtn = document.getElementById('modal-close');
+
+  if (!modal || !closeBtn) {
+    console.error('Modal elements not found');
+    return;
   }
 
-  if (modalClose) {
-    modalClose.addEventListener("click", closeModal);
-  }
+  // Close modal when clicking close button
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeModal();
+  });
 
-  // Close modal when clicking outside
-  window.addEventListener("click", function(e) {
-    if (e.target === modal) {
+  // Close modal when clicking overlay
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target.classList.contains('modal-overlay')) {
       closeModal();
     }
   });
 
-  // ------------------ PACKAGE INQUIRY BUTTONS ------------------
-  const inquiryButtons = document.querySelectorAll(".package-inquiry");
-  const packageSelect = document.getElementById("package");
-
-  inquiryButtons.forEach(button => {
-    button.addEventListener("click", function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      const packageValue = this.getAttribute("data-package");
-      
-      if (packageSelect && packageValue) {
-        packageSelect.value = packageValue;
-      }
-      
-      // Scroll to contact section
-      smoothScrollTo("#contact");
-    });
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
   });
+}
 
-  // ------------------ CONTACT FORM ------------------
-  const contactForm = document.getElementById("contact-form");
+// Open Jyotirlinga Modal - FIXED to display correct content
+function openJyotirlingaModal(jyotirlinga) {
+  const modal = document.getElementById('jyotirlinga-modal');
+  const modalBody = document.getElementById('modal-body');
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const name = this.name.value.trim();
-      const email = this.email.value.trim();
-      const phone = this.phone.value.trim();
-
-      if (!name || !email || !phone) {
-        alert("Please fill in all required fields.");
-        return;
-      }
-
-      const submitBtn = this.querySelector("button[type='submit']");
-      
-      if (submitBtn) {
-        const originalText = submitBtn.textContent;
-        submitBtn.classList.add("loading");
-        submitBtn.textContent = "Sending...";
-        submitBtn.disabled = true;
-
-        setTimeout(() => {
-          submitBtn.classList.remove("loading");
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-          contactForm.reset();
-          alert("Thank you! Our team will contact you soon for your pilgrimage booking.");
-        }, 2000);
-      }
-    });
+  if (!modal || !modalBody) {
+    console.error('Modal elements not found');
+    return;
   }
 
-}); // End DOMContentLoaded
+  modalBody.innerHTML = `
+    <img src="${jyotirlinga.image}" alt="${jyotirlinga.name} Temple" class="modal-image">
+    <h2 class="modal-title">${jyotirlinga.name} Jyotirlinga</h2>
+    
+    <div class="modal-meta">
+      <div class="meta-item">📍 ${jyotirlinga.state}</div>
+      <div class="meta-item">🗓️ ${jyotirlinga.bestMonth}</div>
+    </div>
+
+    <div class="modal-section">
+      <h4>About This Sacred Place</h4>
+      <p>${jyotirlinga.description}</p>
+    </div>
+
+    <div class="modal-section">
+      <h4>Tour Package</h4>
+      <h5 style="color: var(--saffron); margin-bottom: 8px;">${jyotirlinga.package}</h5>
+      <div class="package-highlights">
+        <strong>Package Highlights:</strong><br>
+        ${jyotirlinga.highlights}
+      </div>
+    </div>
+
+    <div class="modal-section">
+      <h4>Suggested Itinerary</h4>
+      <div style="white-space: pre-line; background: var(--color-bg-3); padding: 16px; border-radius: 8px; border-left: 4px solid var(--saffron);">
+${jyotirlinga.itinerary}
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 24px;">
+      <button class="btn btn--primary btn--lg" onclick="closeModal(); document.getElementById('inquiry').scrollIntoView({behavior: 'smooth', block: 'start'});">Book This Package</button>
+    </div>
+  `;
+
+  modal.classList.remove('hidden');
+  
+  // Focus management for accessibility
+  setTimeout(() => {
+    const closeButton = modal.querySelector('#modal-close');
+    if (closeButton) {
+      closeButton.focus();
+    }
+  }, 100);
+}
+
+// Close Modal
+function closeModal() {
+  const modal = document.getElementById('jyotirlinga-modal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+}
+
+// Setup Inquiry Form - FIXED with better feedback
+function setupInquiryForm() {
+  const form = document.getElementById('inquiry-form');
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  if (!form) {
+    console.error('Inquiry form not found');
+    return;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    
+    // Clear previous messages
+    if (successMsg) successMsg.classList.add('hidden');
+    if (errorMsg) errorMsg.classList.add('hidden');
+    
+    // Show detailed loading state
+    submitBtn.innerHTML = '⏳ Submitting your inquiry...';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
+
+    try {
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Validate required fields
+      if (!data.fullName || !data.email || !data.phone) {
+        throw new Error('Please fill in all required fields');
+      }
+      
+      // Simulate form submission with longer delay for better user experience
+      await simulateFormSubmission(data);
+      
+      // Show success message
+      if (successMsg) {
+        successMsg.innerHTML = `
+          <div style="text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 8px;">🙏</div>
+            <strong>Thank you, ${data.fullName}!</strong><br>
+            Your inquiry has been received successfully. Our travel expert will contact you within 24 hours at ${data.phone} to discuss your personalized pilgrimage plan.
+            <br><br>
+            <em>Om Namah Shivaya</em>
+          </div>
+        `;
+        successMsg.classList.remove('hidden');
+        
+        // Scroll to success message
+        setTimeout(() => {
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+      
+      // Reset form
+      form.reset();
+      
+    } catch (error) {
+      console.error('Form submission error:', error);
+      
+      if (errorMsg) {
+        errorMsg.innerHTML = `
+          <div style="text-align: center;">
+            <div style="font-size: 1.5rem; margin-bottom: 8px;">❌</div>
+            <strong>Submission Error</strong><br>
+            ${error.message || 'Sorry, there was an error submitting your inquiry.'}<br><br>
+            Please try again or contact us directly:<br>
+            📧 <a href="mailto:morya_arun@yahoo.co.in" style="color: white;">morya_arun@yahoo.co.in</a><br>
+            📞 <a href="tel:+919773930301" style="color: white;">+91 97739 30301</a>
+          </div>
+        `;
+        errorMsg.classList.remove('hidden');
+      }
+    } finally {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+    }
+  });
+}
+
+// Simulate form submission with better error handling
+function simulateFormSubmission(data) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(data.email)) {
+        reject(new Error('Please enter a valid email address'));
+        return;
+      }
+      
+      // Validate phone number (basic)
+      const phoneRegex = /^\d{10}$|^\+91\d{10}$/;
+      if (!phoneRegex.test(data.phone.replace(/\s/g, ''))) {
+        reject(new Error('Please enter a valid 10-digit phone number'));
+        return;
+      }
+      
+      // Simulate 95% success rate
+      if (Math.random() > 0.05) {
+        console.log('Form submitted successfully:', data);
+        resolve(data);
+      } else {
+        reject(new Error('Network error. Please check your connection and try again.'));
+      }
+    }, 1500);
+  });
+}
+
+// Setup Chatbot - COMPLETELY FIXED
+function setupChatbot() {
+  console.log('Setting up chatbot...');
+  
+  const chatToggle = document.getElementById('chatbot-toggle');
+  const chatWindow = document.getElementById('chatbot-window');
+  const chatClose = document.getElementById('chatbot-close');
+  const chatInput = document.getElementById('chatbot-input');
+  const chatSend = document.getElementById('chatbot-send');
+  const chatMessages = document.getElementById('chatbot-messages');
+
+  if (!chatToggle || !chatWindow || !chatClose || !chatInput || !chatSend || !chatMessages) {
+    console.error('Chatbot elements not found:', {
+      chatToggle: !!chatToggle,
+      chatWindow: !!chatWindow,
+      chatClose: !!chatClose,
+      chatInput: !!chatInput,
+      chatSend: !!chatSend,
+      chatMessages: !!chatMessages
+    });
+    return;
+  }
+
+  console.log('All chatbot elements found, setting up event listeners...');
+
+  // Toggle chat window
+  chatToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('Chat toggle clicked');
+    
+    const isHidden = chatWindow.classList.contains('hidden');
+    chatWindow.classList.toggle('hidden');
+    
+    if (isHidden) {
+      console.log('Opening chatbot...');
+      // Start conversation if it's the first time
+      if (chatbotState.step === 0) {
+        setTimeout(() => {
+          addChatMessage(chatbotMessages[0], false);
+          chatbotState.step = 1;
+        }, 300);
+      }
+      // Focus on input
+      setTimeout(() => chatInput.focus(), 400);
+    }
+  });
+
+  // Close chat window
+  chatClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('Chat close clicked');
+    chatWindow.classList.add('hidden');
+  });
+
+  // Send message function
+  function sendChatMessage() {
+    const message = chatInput.value.trim();
+    if (!message) return;
+
+    console.log('Sending message:', message);
+
+    // Add user message
+    addChatMessage(message, true);
+    chatInput.value = '';
+
+    // Process user input based on current step
+    processChatbotResponse(message);
+  }
+
+  // Send message on button click
+  chatSend.addEventListener('click', (e) => {
+    e.preventDefault();
+    sendChatMessage();
+  });
+  
+  // Send message on Enter key
+  chatInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      sendChatMessage();
+    }
+  });
+
+  // Add chat message function
+  function addChatMessage(message, isUser = false) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `chat-message ${isUser ? 'user' : 'bot'}`;
+    messageDiv.textContent = message;
+    
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+    
+    console.log(`Added ${isUser ? 'user' : 'bot'} message:`, message);
+  }
+
+  // Process chatbot response
+  function processChatbotResponse(userMessage) {
+    setTimeout(() => {
+      let response = '';
+      
+      console.log('Processing response for step:', chatbotState.step);
+      
+      switch (chatbotState.step) {
+        case 1:
+          // Expecting email
+          chatbotState.userData.email = userMessage;
+          response = chatbotMessages[2];
+          chatbotState.step = 2;
+          break;
+          
+        case 2:
+          // Expecting phone
+          chatbotState.userData.phone = userMessage;
+          response = chatbotMessages[3];
+          chatbotState.step = 3;
+          break;
+          
+        case 3:
+          // Expecting interest
+          chatbotState.userData.interest = userMessage;
+          response = chatbotMessages[4];
+          chatbotState.step = 4;
+          
+          // Disable input after completion
+          chatInput.disabled = true;
+          chatSend.disabled = true;
+          chatInput.placeholder = 'Conversation completed. Thank you!';
+          
+          // Log the collected data
+          console.log('Chatbot conversation completed:', chatbotState.userData);
+          break;
+          
+        default:
+          response = "Thank you for your interest! Please contact us at morya_arun@yahoo.co.in for more information.";
+      }
+      
+      if (response) {
+        addChatMessage(response, false);
+      }
+    }, 800);
+  }
+  
+  console.log('Chatbot setup completed successfully');
+}
+
+// Initialize scroll animations (optional enhancement)
+function initScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, observerOptions);
+
+  // Observe cards for animation
+  document.querySelectorAll('.jyotirlinga-card, .review-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+  });
+}
+
+// Initialize scroll animations after a short delay
+setTimeout(initScrollAnimations, 500);
+
+console.log('Jyotirlinga Darshan Tours JavaScript initialized successfully!');
