@@ -8,7 +8,7 @@ const jyotirlingaData = [
   "bestMonth": "October to March",
   "description": "Home to the first and most ancient Jyotirlinga, Somnath is a spiritual powerhouse located along the Arabian Sea. The temple's grandeur and its dramatic seaside backdrop make it a must-visit. Steeped in mythology and history, Somnath has stood the test of time, being rebuilt several times after invasions — a symbol of faith and resilience.",
   "package": "Gujarat Divine & Wildlife Trail: Somnath – Dwarka – Nageshwar – Gir (4 Days / 3 Nights)",
-  "highlights": "Somnath Jyotirlinga ,Triveni Sangam,Dwarka Temple,Nageshwar Jyotirlinga Temple,Bet Dwarka,Gir Safari.",
+  "highlights": "Somnath Jyotirlinga, Dwarka Temple, Nageshwar Jyotirlinga, Bet Dwarka, Gir Safari.",
   "itinerary": `Day 1: Arrival in Somnath
                     • Visit Somnath Jyotirlinga Temple.
                     • Explore Bhalka Tirth, Triveni Sangam, and the Light & Sound Show at the temple.
@@ -36,8 +36,21 @@ const jyotirlingaData = [
     "bestMonth": "October to March",
     "description": "Srisailam is home to the Mallikarjuna Jyotirlinga, one of the 12 sacred Jyotirlingas of Lord Shiva, and also one of the 18 Maha Shakti Peethas — making it a rare dual pilgrimage site. Nestled in the lush Nallamala Hills by the Krishna River, the temple complex offers both spiritual energy and natural beauty.",
     "package": "Srisailam Spiritual Retreat (2 Days / 1 Night)",
-    "highlights": "Temple darshan, Bhramaramba Shakti Peeth, Krishna River views, Nallamala Hills",
-    "itinerary": "Day 1: Arrival at Srisailam, temple darshan and evening aarti\nDay 2: Early morning puja, visit to Bhramaramba temple, scenic viewpoints, departure",
+    "highlights": "Temple darshan, Bhramaramba Shakti Peeth, Krishna River views, Ramoji Film City",
+      "itinerary": `Day 1: Hyderabad to Srisailam (Approx. 4–5 hrs)
+                    •	Depart early morning from Hyderabad.
+                    •	Reach Srisailam and check in to hotel.
+                    •	Visit Mallikarjuna Swamy Temple and Bhramaramba Devi Temple.
+                    •	Explore Pathala Ganga via ropeway and enjoy boat ride on the Krishna River.
+                    •	Evening visit to Srisailam Dam or Sikharam Viewpoint.
+                    •	Overnight stay in Srisailam.
+                \nDay 2: Srisailam to Ramoji Film City (Approx. 5 hrs)
+                    •	Early check-out and drive to Ramoji Film City.
+                    •	Enjoy full-day Film City tour with live shows, theme attractions, and studio sets.
+                    •	Evening return or optional overnight stay in Hyderabad (or inside Ramoji’s hotels).
+                \nOptional Add-ons:
+                    •	Akkamahadevi Caves boat ride in Srisailam (3–4 hrs, seasonal)
+                    •	Hyderabad sightseeing (Charminar, Golconda Fort, Birla Temple) — Add 1 extra day.`,
     "image": "images/Mallikaarjun.jpg"
   },
   {
