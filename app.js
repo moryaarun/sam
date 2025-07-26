@@ -126,7 +126,7 @@ const jyotirlingaData = [
 
 const reviewsData = [
   {
-    "name": "Rajesh Sharma",
+    "name": "Praveen Tiwari",
     "rating": 5,
     "text": "Wonderful spiritual journey to all 12 Jyotirlingas. The team arranged everything perfectly - accommodation, transportation, and guides. Highly recommended for anyone seeking divine blessings.",
     "location": "Mumbai"
@@ -138,7 +138,7 @@ const reviewsData = [
     "location": "Ahmedabad"
   },
   {
-    "name": "Suresh Kumar",
+    "name": "Ram Shalunke",
     "rating": 4,
     "text": "Excellent service and knowledgeable guides. The Gujarat Jyotirlinga tour was well-planned with comfortable stays. Will definitely book again for other pilgrimage tours.",
     "location": "Pune"
