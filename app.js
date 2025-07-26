@@ -110,7 +110,7 @@ const jyotirlingaData = [
     "package": "Rameshwar Island Pilgrimage (3 Days / 2 Nights)",
     "highlights": "Temple corridors, Agni Theertham, Pamban Bridge, island tour",
     "itinerary": "Day 1: Arrival in Rameshwaram, temple darshan, corridor exploration\nDay 2: 22 holy water tanks visit, Agni Theertham bath, Pamban Bridge\nDay 3: Dhanushkodi visit, Adam's Bridge view, departure",
-    "image": "images/Rameshwar.jpg"
+    "image": "images/Rameshwar.JPG"
   },
   {
     "name": "Grishneshwar", 
