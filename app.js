@@ -20,7 +20,7 @@ const jyotirlingaData = [
     "package": "Srisailam Spiritual Retreat (2 Days / 1 Night)",
     "highlights": "Temple darshan, Bhramaramba Shakti Peeth, Krishna River views, Nallamala Hills",
     "itinerary": "Day 1: Arrival at Srisailam, temple darshan and evening aarti\nDay 2: Early morning puja, visit to Bhramaramba temple, scenic viewpoints, departure",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&h=300&fit=crop"
+    "image": "images/Mallikaarjun.jpg"
   },
   {
     "name": "Mahakaleshwar",
