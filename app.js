@@ -13,17 +13,20 @@ const jyotirlingaData = [
 • Visit Somnath Jyotirlinga Temple.
 • Explore Bhalka Tirth, Triveni Sangam, and the Light & Sound Show at the temple.
 • Overnight stay in Somnath.
+
 Day 2: Somnath to Dwarka (Approx. 4.5–5 hrs drive)
 • En route, stop at Porbandar (birthplace of Mahatma Gandhi – Kirti Mandir).
 • Reach Dwarka and visit Dwarkadhish Temple.
 • Evening Aarti and leisure at Gomti Ghat.
 • Overnight stay in Dwarka.
+
 Day 3: Nageshwar + Bet Dwarka
 • Morning visit to Nageshwar Jyotirlinga Temple.
 • Take a boat to Bet Dwarka (island temple of Lord Krishna).
 • Visit Rukmini Temple on return.
 • Optional shopping and cultural walk.
 • Overnight stay in Dwarka or travel to Gir (depending on pace).
+
 Day 4: Gir Safari + Departure
 • Early morning Jeep Safari at Gir National Park (pre-booking required).
 • Visit Devalia Safari Park if time permits.
