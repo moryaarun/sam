@@ -10,7 +10,7 @@ const jyotirlingaData = [
     "package": "Gujarat Divine & Wildlife Trail: Somnath – Dwarka – Nageshwar – Gir (4 Days / 3 Nights)",
     "highlights": "Nageshwar Jyotirlinga Temple, Rudra Yagna participation, and spiritual darshan near the Arabian coastline.",
     "itinerary": "Day 1: Arrival in Somnath, evening temple darshan and aarti ceremony\nDay 2: Morning puja at Somnath, visit to Bhalka Tirth and Triveni Sangam\nDay 3: Travel to Dwarka, Krishna Janmabhoomi temple visit\nDay 4: Nageshwar Jyotirlinga darshan, departure",
-    "image": "jyotirlinga-darshan\images\Somnath.jpg"
+    "image": "images/Somnath.jpg"
   },
   {
     "name": "Mallikarjuna", 
