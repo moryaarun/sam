@@ -30,7 +30,7 @@ const jyotirlingaData = [
     "package": "Ujjain Sacred Circuit (3 Days / 2 Nights)",
     "highlights": "Dawn Bhasma Aarti, Shipra River ghats, Kaal Bhairav temple",
     "itinerary": "Day 1: Arrival in Ujjain, evening temple visit and local sightseeing\nDay 2: Early morning Bhasma Aarti (4 AM), Shipra River ghats, Kaal Bhairav temple\nDay 3: Ram Ghat, Sandipani Ashram, Ved Shala observatory, departure",
-    "image": "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop"
+    "image": "images/Mahakaleshwar.jpg"
   },
   {
     "name": "Omkareshwar",
@@ -40,7 +40,7 @@ const jyotirlingaData = [
     "package": "Narmada Divine Journey (2 Days / 1 Night)",
     "highlights": "Island temple, Narmada Parikrama, river aarti",
     "itinerary": "Day 1: Arrival at Omkareshwar, boat ride to temple island, evening aarti\nDay 2: Narmada Parikrama, Mamleshwar temple visit, departure",
-    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+    "image": "images/Omkareshwar.jpg"
   },
   {
     "name": "Kedarnath",
@@ -50,7 +50,7 @@ const jyotirlingaData = [
     "package": "Himalayan Spiritual Trek (3 Days / 2 Nights)", 
     "highlights": "Temple trek, Bhairavnath temple, Himalayan views",
     "itinerary": "Day 1: Reach Gaurikund, begin 16km trek to Kedarnath\nDay 2: Early morning darshan, visit Bhairavnath temple, rest day\nDay 3: Final darshan, trek back to Gaurikund, departure",
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop"
+    "image": "images/Kedarnath.jpg"
   },
   {
     "name": "Bhimashankar",
