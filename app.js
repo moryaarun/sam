@@ -60,7 +60,7 @@ const jyotirlingaData = [
     "package": "Sahyadri Spiritual Retreat (2 Days / 1 Night)",
     "highlights": "Temple darshan, wildlife sanctuary, scenic trekking",
     "itinerary": "Day 1: Drive from Pune to Bhimashankar, temple darshan, nature walk\nDay 2: Early morning puja, wildlife sanctuary visit, return to Pune",
-    "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=300&fit=crop"
+    "image": "images/Bhimashankar.jpg"
   },
   {
     "name": "Kashi Vishwanath", 
@@ -70,7 +70,7 @@ const jyotirlingaData = [
     "package": "Spiritual Wonders of Uttar Pradesh: Prayagraj – Kashi – Ayodhya (5 Days/4 Nights)",
     "highlights": "Ganga Aarti at Dashashwamedh Ghat, temple darshan, spiritual city tour",
     "itinerary": "Day 1: Arrival in Varanasi, Kashi Corridor visit, evening Ganga aarti\nDay 2: Early morning boat ride, temple darshan, city exploration\nDay 3: Travel to Prayagraj, Triveni Sangam, Akshayavat\nDay 4: Journey to Ayodhya, Ram Janmabhoomi, Hanuman Garhi\nDay 5: Final temple visits, departure",
-    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=500&h=300&fit=crop"
+    "image": "images/Kashi.jpg"
   },
   {
     "name": "Trimbakeshwar",
@@ -80,7 +80,7 @@ const jyotirlingaData = [
     "package": "Godavari Source Pilgrimage (2 Days / 1 Night)",
     "highlights": "Trimbakeshwar Jyotirlinga, Kushavarta Kund, Brahmagiri Hill, Anjaneri (Hanuman's birthplace)",
     "itinerary": "Day 1: Arrival in Nashik, Trimbakeshwar temple darshan, Kushavarta Kund\nDay 2: Brahmagiri hill trek, Anjaneri visit, departure",
-    "image": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=500&h=300&fit=crop"
+    "image": "images/Trimbakeshwar.jpg"
   },
   {
     "name": "Vaidyanath",
@@ -90,7 +90,7 @@ const jyotirlingaData = [
     "package": "Deoghar Healing Pilgrimage (2 Days / 1 Night)",
     "highlights": "Temple darshan, Baidyanath dham, healing prayers",
     "itinerary": "Day 1: Arrival in Deoghar, temple darshan, local temples visit\nDay 2: Early morning puja, Naulakha Mandir, departure",
-    "image": "https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=500&h=300&fit=crop"
+    "image": "images/Vaidyanath.jpg"
   },
   {
     "name": "Nageshwar",
@@ -100,7 +100,7 @@ const jyotirlingaData = [
     "package": "Dwarka-Nageshwar Divine Tour (3 Days / 2 Nights)",
     "highlights": "Temple darshan, giant Shiva statue, Dwarka city tour",
     "itinerary": "Day 1: Arrival in Dwarka, Dwarkadhish temple, local sightseeing\nDay 2: Nageshwar Jyotirlinga darshan, giant Shiva statue, Bet Dwarka\nDay 3: Rukmini temple, Gomti Ghat, departure",
-    "image": "https://images.unsplash.com/photo-1558051815-0c90ac7a9d08?w=500&h=300&fit=crop"
+    "image": "images/Nageshwar.jpg"
   },
   {
     "name": "Rameshwar",
@@ -110,7 +110,7 @@ const jyotirlingaData = [
     "package": "Rameshwar Island Pilgrimage (3 Days / 2 Nights)",
     "highlights": "Temple corridors, Agni Theertham, Pamban Bridge, island tour",
     "itinerary": "Day 1: Arrival in Rameshwaram, temple darshan, corridor exploration\nDay 2: 22 holy water tanks visit, Agni Theertham bath, Pamban Bridge\nDay 3: Dhanushkodi visit, Adam's Bridge view, departure",
-    "image": "https://images.unsplash.com/photo-1555993539-1b1ae2a5bb72?w=500&h=300&fit=crop"
+    "image": "images/Rameshwar.jpg"
   },
   {
     "name": "Grishneshwar", 
@@ -120,7 +120,7 @@ const jyotirlingaData = [
     "package": "Ellora Heritage & Spiritual Tour (2 Days / 1 Night)", 
     "highlights": "Grishneshwar Temple, Ellora Caves, Kailasa Temple, Daulatabad Fort",
     "itinerary": "Day 1: Arrival in Aurangabad, Grishneshwar temple darshan, local exploration\nDay 2: Ellora Caves tour, Kailasa Temple, Daulatabad Fort, departure",
-    "image": "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=500&h=300&fit=crop"
+    "image": "images/Grishneshwar.jpg"
   }
 ];
 
