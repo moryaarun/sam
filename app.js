@@ -28,7 +28,7 @@ const jyotirlingaData = [
                     • Early morning Jeep Safari at Gir National Park (pre-booking required).
                     • Visit Devalia Safari Park if time permits.
                     • Depart from Rajkot or Diu (nearest airports).`,
-  "image": "images/Somnath.jpg"
+  "image": "images/Somnath3.png"
 },
  {
   "name": "Mallikarjuna", 
@@ -169,8 +169,29 @@ const jyotirlingaData = [
     "bestMonth": "November to February",
     "description": "In the heart of Varanasi on the banks of the sacred Ganga, Kashi Vishwanath is considered the spiritual capital of India and the ultimate destination for moksha (liberation).",
     "package": "Spiritual Wonders of Uttar Pradesh: Prayagraj – Kashi – Ayodhya (5 Days/4 Nights)",
-    "highlights": "Ganga Aarti at Dashashwamedh Ghat, temple darshan, spiritual city tour",
-    "itinerary": "Day 1: Arrival in Varanasi, Kashi Corridor visit, evening Ganga aarti\nDay 2: Early morning boat ride, temple darshan, city exploration\nDay 3: Travel to Prayagraj, Triveni Sangam, Akshayavat\nDay 4: Journey to Ayodhya, Ram Janmabhoomi, Hanuman Garhi\nDay 5: Final temple visits, departure",
+    "highlights": "Kashi Vishwanath Temple, Ganga Aarti, Sarnath, Triveni Sangam Snan (holy dip), Ram Janmabhoomi Temple.",
+    "itinerary": `Day 1: Arrival in Prayagraj
+                  •	Visit Triveni Sangam for a holy dip.
+                  •	Explore Bade Hanuman Mandir, Akshayavat, and Allahabad Fort.
+                  •	Overnight stay in Prayagraj.
+                \nDay 2: Prayagraj to Varanasi (Approx. 2.5–3 hrs by road)
+                  •	Travel to Kashi (Varanasi).
+                  •	Evening Ganga Aarti at Dashashwamedh Ghat.
+                  •	Optional: Sunset boat ride on the Ganga.
+                  •	Overnight stay in Varanasi.
+                \nDay 3: Varanasi Local Sightseeing
+                  •	Early morning visit to Kashi Vishwanath Temple.
+                  •	Visit Annapurna Temple, Sankat Mochan Hanuman Mandir, Durga Mandir.
+                  •	Explore Sarnath (Buddhist pilgrimage site).
+                  •	Overnight stay in Varanasi.
+                \nDay 4: Varanasi to Ayodhya (Approx. 4.5–5 hrs by road)
+                  •	Travel to Ayodhya.
+                  •	Visit Ram Janmabhoomi Temple, Hanuman Garhi, Kanak Bhawan.
+                  •	Attend Saryu Aarti in the evening.
+                  •	Overnight stay in Ayodhya.
+                \nDay 5: Ayodhya Sightseeing + Departure
+                  •	Visit any remaining local temples or heritage spots.
+                  •	Tour ends with drop-off at station/airport/hotel.`,
     "image": "images/Kashi.jpg"
   },
   {
@@ -202,13 +223,31 @@ const jyotirlingaData = [
     "image": "images/Trimbakeshwar.jpg"
   },
   {
-    "name": "Vaidyanath",
+    "name": "Baidyanath",
     "state": "Jharkhand",
     "bestMonth": "October to March",
-    "description": "Located in Deoghar, Vaidyanath is believed to have healing powers and is especially crowded during the Sawan festival when millions of devotees visit.",
-    "package": "Deoghar Healing Pilgrimage (2 Days / 1 Night)",
-    "highlights": "Temple darshan, Baidyanath dham, healing prayers",
-    "itinerary": "Day 1: Arrival in Deoghar, temple darshan, local temples visit\nDay 2: Early morning puja, Naulakha Mandir, departure",
+    "description": "Located in Deoghar, Baidyanath is believed to have healing powers and is especially crowded during the Sawan festival when millions of devotees visit.",
+    "package": "Deoghar Healing Pilgrimage (4 Days / 3 Night)",
+    "highlights": "Baidyanath Jyotirlinga Temple, Basukinath Temple, Vishnupad Temple, Phalgu River, Akshayavat Tree, Pind Daan rituals.",
+    "itinerary": `Day 1: Arrival in Deoghar – Baidyanath & Basukinath
+                  •	Arrive in Deoghar (via train or flight).
+                  •	Visit Baba Baidyanath Jyotirlinga Temple for darshan.
+                  •	Explore Parvati Temple, Naulakha Mandir, and Shivganga Kund.
+                  •	Afternoon excursion to Basukinath Temple (approx. 1.5 hrs one way).
+                  •	Return and overnight stay in Deoghar.
+                \nDay 2: Deoghar to Gaya (Approx. 6–7 hrs drive)
+                  •	Early morning departure for Gaya.
+                  •	Perform Pind Daan rituals at Vishnupad Temple and Phalgu River.
+                  •	Evening visit to Bodh Gaya: Explore Mahabodhi Temple, Bodhi Tree, and monasteries.
+                  •	Overnight stay in Gaya.
+                \nDay 3: Gaya to Rajgir – Nalanda Excursion (Approx. 2 hrs drive)
+                  •	Depart for Rajgir in the morning.
+                  •	Visit Shanti Stupa via Ropeway, Venuvan, and Hot Springs.
+                  •	Post-lunch visit to Nalanda ruins and Xuanzang Memorial Hall.
+                  •	Return and overnight stay in Gaya or Rajgir.
+                \nDay 4: Departure
+                  •	Morning at leisure or optional revisit to Bodh Gaya for meditation.
+                  •	Depart from Gaya Railway Station or Gaya International Airport.`,
     "image": "images/Vaidyanath.jpg"
   },
   {
@@ -217,8 +256,26 @@ const jyotirlingaData = [
     "bestMonth": "October to March", 
     "description": "Near Dwarka, Nageshwar is famous for its giant Shiva statue and proximity to the Arabian Sea, offering both spiritual and scenic experiences.",
     "package": "Dwarka-Nageshwar Divine Tour (3 Days / 2 Nights)",
-    "highlights": "Temple darshan, giant Shiva statue, Dwarka city tour",
-    "itinerary": "Day 1: Arrival in Dwarka, Dwarkadhish temple, local sightseeing\nDay 2: Nageshwar Jyotirlinga darshan, giant Shiva statue, Bet Dwarka\nDay 3: Rukmini temple, Gomti Ghat, departure",
+    "highlights": "Somnath Jyotirlinga, Dwarka Temple, Nageshwar Jyotirlinga, Bet Dwarka, Gir Safari.",
+    "itinerary": `Day 1: Arrival in Somnath
+                    • Visit Somnath Jyotirlinga Temple.
+                    • Explore Bhalka Tirth, Triveni Sangam, and the Light & Sound Show at the temple.
+                    • Overnight stay in Somnath.
+                \nDay 2: Somnath to Dwarka (Approx. 4.5–5 hrs drive)
+                    • En route, stop at Porbandar (birthplace of Mahatma Gandhi – Kirti Mandir).
+                    • Reach Dwarka and visit Dwarkadhish Temple.
+                    • Evening Aarti and leisure at Gomti Ghat.
+                    • Overnight stay in Dwarka.
+                \nDay 3: Nageshwar + Bet Dwarka
+                    • Morning visit to Nageshwar Jyotirlinga Temple.
+                    • Take a boat to Bet Dwarka (island temple of Lord Krishna).
+                    • Visit Rukmini Temple on return.
+                    • Optional shopping and cultural walk.
+                    • Overnight stay in Dwarka or travel to Gir (depending on pace).
+                \nDay 4: Gir Safari + Departure
+                    • Early morning Jeep Safari at Gir National Park (pre-booking required).
+                    • Visit Devalia Safari Park if time permits.
+                    • Depart from Rajkot or Diu (nearest airports).`,
     "image": "images/Nageshwar.jpg"
   },
   {
@@ -226,9 +283,21 @@ const jyotirlingaData = [
     "state": "Tamil Nadu",
     "bestMonth": "October to April",
     "description": "Located on Pamban Island and connected to the Ramayana, Rameshwar is famous for its magnificent corridors and the ritual of Agni Theertham.",
-    "package": "Rameshwar Island Pilgrimage (3 Days / 2 Nights)",
-    "highlights": "Temple corridors, Agni Theertham, Pamban Bridge, island tour",
-    "itinerary": "Day 1: Arrival in Rameshwaram, temple darshan, corridor exploration\nDay 2: 22 holy water tanks visit, Agni Theertham bath, Pamban Bridge\nDay 3: Dhanushkodi visit, Adam's Bridge view, departure",
+    "package": "Rameshwar Island Pilgrimage (2 Days / 1 Nights)",
+    "highlights": "Ramanathaswamy Temple (Jyotirlinga),	Dhanushkodi, Panchamukhi Hanuman Temple & Floating Stone exhibit, Meenakshi-Sundareswarar Temple, Golden Lotus Pond.",
+    "itinerary": `Day 1: Arrival in Rameshwaram
+                  •	Visit Ramanathaswamy Temple for Jyotirlinga darshan and 22 well theertham rituals.
+                  •	Take a holy dip at Agni Theertham (beachside).
+                  •	Visit Dhanushkodi Beach and Ram Setu viewpoint.
+                  •	Optional: Panchamukhi Hanuman Temple & Floating Stone exhibit.
+                  •	Overnight stay in Rameshwaram.
+                \nDay 2: Rameshwaram to Madurai (Approx. 3.5 hrs) – Meenakshi Temple
+                  •	Depart to Madurai after breakfast.
+                  •	Visit the majestic Meenakshi Amman Temple and explore the ancient corridors and sculptures.
+                  •	Optional visit to Thirumalai Nayakkar Palace or Gandhi Memorial Museum.
+                  •	Evening return or overnight stay in Madurai.
+                \nOptional Add-ons:
+                  •	Add 1 day for Kanyakumari tour from Rameshwaram.`,
     "image": "images/Rameshwaram.jpg"
   },
   {
