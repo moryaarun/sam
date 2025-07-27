@@ -83,8 +83,22 @@ const jyotirlingaData = [
     "bestMonth": "October to February", 
     "description": "Located on a sacred island in the Narmada River, Omkareshwar is known for its unique Om-shaped formation and divine energy. The temple complex offers breathtaking views and spiritual serenity.",
     "package": "Narmada Divine Journey (2 Days / 1 Night)",
-    "highlights": "Island temple, Narmada Parikrama, river aarti",
-    "itinerary": "Day 1: Arrival at Omkareshwar, boat ride to temple island, evening aarti\nDay 2: Narmada Parikrama, Mamleshwar temple visit, departure",
+     "highlights": "Dawn Bhasma Aarti, Harsiddhi Mata Temple, Kaal Bhairav temple, Omkareshwar Jyotirlinga Temple, Parikrama of Om-shaped island, boat rides on Narmada.",
+    "itinerary": `Day 1: Arrival in Ujjain (Mahakaleshwar)
+                  • Check-in at hotel.
+                  •	Visit Mahakaleshwar Temple and attend evening Aarti.
+                  •	Explore nearby temples: Harsiddhi Mata, Kal Bhairav, and Ram Ghat on the Shipra.
+                  •	Overnight stay in Ujjain.
+                \nDay 2: Ujjain to Omkareshwar (Approx. 4 hrs drive)
+                  • Early morning Bhasma Aarti (advance booking required).
+                  •	Post-breakfast, depart for Omkareshwar.
+                  •	En route, optional stop at Indore for lunch.
+                  •	Arrive and visit Omkareshwar Temple, take part in river parikrama.
+                  •	Boat ride on the Narmada.
+                  •	Overnight stay in Omkareshwar or return to Indore (optional).
+                \nDay 3: Departure
+                  •	Optional morning visit to Mamleshwar Temple (twin Jyotirlinga on mainland).
+                  •	Departure from Indore (nearest airport/railway station).`,
     "image": "images/Omkareshwar.jpg"
   },
   {
