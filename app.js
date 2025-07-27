@@ -59,8 +59,22 @@ const jyotirlingaData = [
     "bestMonth": "October to March",
     "description": "Located in the ancient city of Ujjain, Mahakaleshwar is one of the 12 Jyotirlingas and the only one that is south-facing (Dakshinamukhi) — a unique aspect that adds to its mystical aura. The temple is known for the sacred Bhasma Aarti, performed at dawn using sacred ash — a ritual that attracts thousands of devotees daily.",
     "package": "Ujjain Sacred Circuit (3 Days / 2 Nights)",
-    "highlights": "Dawn Bhasma Aarti, Shipra River ghats, Kaal Bhairav temple",
-    "itinerary": "Day 1: Arrival in Ujjain, evening temple visit and local sightseeing\nDay 2: Early morning Bhasma Aarti (4 AM), Shipra River ghats, Kaal Bhairav temple\nDay 3: Ram Ghat, Sandipani Ashram, Ved Shala observatory, departure",
+    "highlights": "Dawn Bhasma Aarti, Harsiddhi Mata Temple, Kaal Bhairav temple, Omkareshwar Jyotirlinga Temple, Parikrama of Om-shaped island, boat rides on Narmada.",
+    "itinerary": `Day 1: Arrival in Ujjain (Mahakaleshwar)
+                  • Check-in at hotel.
+                  •	Visit Mahakaleshwar Temple and attend evening Aarti.
+                  •	Explore nearby temples: Harsiddhi Mata, Kal Bhairav, and Ram Ghat on the Shipra.
+                  •	Overnight stay in Ujjain.
+                \nDay 2: Ujjain to Omkareshwar (Approx. 4 hrs drive)
+                  • Early morning Bhasma Aarti (advance booking required).
+                  •	Post-breakfast, depart for Omkareshwar.
+                  •	En route, optional stop at Indore for lunch.
+                  •	Arrive and visit Omkareshwar Temple, take part in river parikrama.
+                  •	Boat ride on the Narmada.
+                  •	Overnight stay in Omkareshwar or return to Indore (optional).
+                \nDay 3: Departure
+                  •	Optional morning visit to Mamleshwar Temple (twin Jyotirlinga on mainland).
+                  •	Departure from Indore (nearest airport/railway station).`,
     "image": "images/Mahakaleshwar.jpg"
   },
   {
