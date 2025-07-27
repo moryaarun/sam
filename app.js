@@ -82,7 +82,7 @@ const jyotirlingaData = [
     "state": "Madhya Pradesh",
     "bestMonth": "October to February", 
     "description": "Located on a sacred island in the Narmada River, Omkareshwar is known for its unique Om-shaped formation and divine energy. The temple complex offers breathtaking views and spiritual serenity.",
-    "package": "Narmada Divine Journey (2 Days / 1 Night)",
+    "package": "Narmada Divine Journey (3 Days / 2 Night)",
      "highlights": "Dawn Bhasma Aarti, Harsiddhi Mata Temple, Kaal Bhairav temple, Omkareshwar Jyotirlinga Temple, Parikrama of Om-shaped island, boat rides on Narmada.",
     "itinerary": `Day 1: Arrival in Ujjain (Mahakaleshwar)
                   • Check-in at hotel.
@@ -106,9 +106,33 @@ const jyotirlingaData = [
     "state": "Uttarakhand",
     "bestMonth": "May-June, September-October",
     "description": "Nestled high in the Himalayas, Kedarnath is accessible only during summer and autumn months. This sacred shrine by the Mandakini River offers an unparalleled spiritual experience amidst snow-capped peaks.",
-    "package": "Himalayan Spiritual Trek (3 Days / 2 Nights)", 
-    "highlights": "Temple trek, Bhairavnath temple, Himalayan views",
-    "itinerary": "Day 1: Reach Gaurikund, begin 16km trek to Kedarnath\nDay 2: Early morning darshan, visit Bhairavnath temple, rest day\nDay 3: Final darshan, trek back to Gaurikund, departure",
+    "package": "Himalayan Spiritual Trek (5 Days / 4 Nights)", 
+    "highlights": "Kedarnath Temple, Bhairavnath temple, Himalayan views,Badrinath Temple, Mana Village nearby",
+    "itinerary": `Day 1: Haridwar – Guptkashi / Sonprayag
+                  •	Arrival in Haridwar (early morning).
+                  •	Drive to Guptkashi / Sonprayag (approx. 8–9 hrs).
+                  •	En route: stop at Devprayag (confluence of Alaknanda & Bhagirathi).
+                  •	Overnight stay in Guptkashi or nearby.
+                \nDay 2: Kedarnath Darshan
+                  •	Early morning leave for Gaurikund (by drive), then trek to Kedarnath (16 km trek ).
+                  •	Visit Kedarnath Temple, evening Aarti.
+                  •	Overnight stay in Kedarnath or return to Guptkashi (depending on choice).
+                \nDay 3: Guptkashi – Badrinath (via Joshimath)
+                  •	Early morning departure for Badrinath via Joshimath (approx. 7–8 hrs).
+                  •	Visit Badrinath Temple, take dip in Tapt Kund, attend evening Aarti.
+                  •	Optional: Visit Brahma Kapal for pind daan.
+                  •	Overnight stay in Badrinath.
+                \nDay 4: Mana Village Excursion – Return to Rudraprayag / Srinagar
+                  •	Morning visit to Mana Village: See Vyas Gufa, Saraswati River, Bhim Pul.
+                  •	Depart for Rudraprayag or Srinagar Garhwal for night halt.
+                  •	En route visit Vishnuprayag and Nandprayag.
+                \nDay 5: Return to Haridwar
+                  •	Drive back to Haridwar (approx. 6–7 hrs).
+                  •	Visit Har Ki Pauri for Ganga Aarti (if time permits).
+                  •	Tour ends with drop-off at station/airport/hotel.
+                \nOptional Add-ons: 
+                  •	Helicopter package for Kedarnath darshan
+                  •	Extra day for Rishikesh adventure (rafting, yoga, Ganga beach)`,
     "image": "images/Kedarnath.jpg"
   },
   {
@@ -116,9 +140,27 @@ const jyotirlingaData = [
     "state": "Maharashtra",
     "bestMonth": "October to March",
     "description": "Located in the Sahyadri hills near Pune, Bhimashankar combines spiritual significance with natural beauty, being situated within a wildlife sanctuary.",
-    "package": "Sahyadri Spiritual Retreat (2 Days / 1 Night)",
-    "highlights": "Temple darshan, wildlife sanctuary, scenic trekking",
-    "itinerary": "Day 1: Drive from Pune to Bhimashankar, temple darshan, nature walk\nDay 2: Early morning puja, wildlife sanctuary visit, return to Pune",
+    "package": "Sahyadri Spiritual Retreat (4 Days / 3 Night)",
+    "highlights": "Trimbakeshwar Jyotirlinga, Anjaneri (Hanuman's birthplace), Sai Baba Samadhi Mandir, Bhimashankar Jyotirlinga, Grishneshwar Temple, Ellora Caves",
+    "itinerary": `Day 1: Arrival in Nashik – Trimbakeshwar
+                  •	Visit Trimbakeshwar Temple and take a dip at Kushavarta Kund.
+                  •	Optional trek to Brahmagiri Hill.
+                  •	Explore Anjaneri Hills (Hanuman’s birthplace).
+                  •	Overnight stay in Nashik.
+                \nDay 2: Nashik – Shirdi (Approx. 90 km / 2 hrs)
+                  •	Depart for Shirdi after breakfast.
+                  •	Visit Sai Baba Samadhi Mandir, Dwarkamai, and Gurusthan.
+                  •	Evening at Lendi Baug or attend Sai Baba Aarti.
+                  •	Overnight stay in Shirdi.
+                \nDay 3: Shirdi – Bhimashankar (Approx. 190 km / 5–6 hrs)
+                  •	Early morning drive to Bhimashankar.
+                  •	Darshan at Bhimashankar Jyotirlinga Temple.
+                  •	Overnight stay in Bhimashankar or proceed to Pune for stay.
+                \nDay 4: Bhimashankar – Grishneshwar via Aurangabad (Approx. 280 km / 6–7 hrs)
+                  •	Early morning departure.  
+                  •	Visit Grishneshwar Temple and explore Ellora Caves.
+                  •	Optional visit to Daulatabad Fort or Bibi Ka Maqbara.
+                  •	Departure from Aurangabad (Airport/Railway Station).`,
     "image": "images/Bhimashankar.jpg"
   },
   {
@@ -136,9 +178,27 @@ const jyotirlingaData = [
     "state": "Maharashtra", 
     "bestMonth": "October to March",
     "description": "Located at the origin of the sacred Godavari River, Trimbakeshwar features a unique three-faced Shiva linga and is surrounded by the beautiful Brahmagiri hills.",
-    "package": "Godavari Source Pilgrimage (2 Days / 1 Night)",
-    "highlights": "Trimbakeshwar Jyotirlinga, Kushavarta Kund, Brahmagiri Hill, Anjaneri (Hanuman's birthplace)",
-    "itinerary": "Day 1: Arrival in Nashik, Trimbakeshwar temple darshan, Kushavarta Kund\nDay 2: Brahmagiri hill trek, Anjaneri visit, departure",
+    "package": "Sahyadri Spiritual Retreat (4 Days / 3 Night)",
+    "highlights": "Trimbakeshwar Jyotirlinga, Anjaneri (Hanuman's birthplace), Sai Baba Samadhi Mandir, Bhimashankar Jyotirlinga, Grishneshwar Temple, Ellora Caves",
+    "itinerary": `Day 1: Arrival in Nashik – Trimbakeshwar
+                  •	Visit Trimbakeshwar Temple and take a dip at Kushavarta Kund.
+                  •	Optional trek to Brahmagiri Hill.
+                  •	Explore Anjaneri Hills (Hanuman’s birthplace).
+                  •	Overnight stay in Nashik.
+                \nDay 2: Nashik – Shirdi (Approx. 90 km / 2 hrs)
+                  •	Depart for Shirdi after breakfast.
+                  •	Visit Sai Baba Samadhi Mandir, Dwarkamai, and Gurusthan.
+                  •	Evening at Lendi Baug or attend Sai Baba Aarti.
+                  •	Overnight stay in Shirdi.
+                \nDay 3: Shirdi – Bhimashankar (Approx. 190 km / 5–6 hrs)
+                  •	Early morning drive to Bhimashankar.
+                  •	Darshan at Bhimashankar Jyotirlinga Temple.
+                  •	Overnight stay in Bhimashankar or proceed to Pune for stay.
+                \nDay 4: Bhimashankar – Grishneshwar via Aurangabad (Approx. 280 km / 6–7 hrs)
+                  •	Early morning departure.  
+                  •	Visit Grishneshwar Temple and explore Ellora Caves.
+                  •	Optional visit to Daulatabad Fort or Bibi Ka Maqbara.
+                  •	Departure from Aurangabad (Airport/Railway Station).`,
     "image": "images/Trimbakeshwar.jpg"
   },
   {
@@ -176,9 +236,27 @@ const jyotirlingaData = [
     "state": "Maharashtra",
     "bestMonth": "October to March",
     "description": "The last Jyotirlinga, located near the famous Ellora Caves, Grishneshwar combines spiritual significance with incredible architectural heritage.",
-    "package": "Ellora Heritage & Spiritual Tour (2 Days / 1 Night)", 
-    "highlights": "Grishneshwar Temple, Ellora Caves, Kailasa Temple, Daulatabad Fort",
-    "itinerary": "Day 1: Arrival in Aurangabad, Grishneshwar temple darshan, local exploration\nDay 2: Ellora Caves tour, Kailasa Temple, Daulatabad Fort, departure",
+    "package": "Sahyadri Spiritual Retreat (4 Days / 3 Night)",
+    "highlights": "Trimbakeshwar Jyotirlinga, Anjaneri (Hanuman's birthplace), Sai Baba Samadhi Mandir, Bhimashankar Jyotirlinga, Grishneshwar Temple, Ellora Caves",
+    "itinerary": `Day 1: Arrival in Nashik – Trimbakeshwar
+                  •	Visit Trimbakeshwar Temple and take a dip at Kushavarta Kund.
+                  •	Optional trek to Brahmagiri Hill.
+                  •	Explore Anjaneri Hills (Hanuman’s birthplace).
+                  •	Overnight stay in Nashik.
+                \nDay 2: Nashik – Shirdi (Approx. 90 km / 2 hrs)
+                  •	Depart for Shirdi after breakfast.
+                  •	Visit Sai Baba Samadhi Mandir, Dwarkamai, and Gurusthan.
+                  •	Evening at Lendi Baug or attend Sai Baba Aarti.
+                  •	Overnight stay in Shirdi.
+                \nDay 3: Shirdi – Bhimashankar (Approx. 190 km / 5–6 hrs)
+                  •	Early morning drive to Bhimashankar.
+                  •	Darshan at Bhimashankar Jyotirlinga Temple.
+                  •	Overnight stay in Bhimashankar or proceed to Pune for stay.
+                \nDay 4: Bhimashankar – Grishneshwar via Aurangabad (Approx. 280 km / 6–7 hrs)
+                  •	Early morning departure.  
+                  •	Visit Grishneshwar Temple and explore Ellora Caves.
+                  •	Optional visit to Daulatabad Fort or Bibi Ka Maqbara.
+                  •	Departure from Aurangabad (Airport/Railway Station).`,
     "image": "images/Grishneshwar.jpg"
   }
 ];
